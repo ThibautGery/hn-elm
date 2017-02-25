@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Sample Elm Test",
-    "repository": "https://github.com/ThibautGery/hn-elm",
+    "repository": "https://github.com/ThibautGery/hn-elm.git",
     "license": "BSD-3-Clause",
     "source-directories": [
         ".",
