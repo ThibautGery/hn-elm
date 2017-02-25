@@ -1,5 +1,6 @@
 'use strict';
 
+require('semantic-ui-css/semantic.min.css')
 require('font-awesome/css/font-awesome.css');
 
 // Require index.html so it gets copied to dist
