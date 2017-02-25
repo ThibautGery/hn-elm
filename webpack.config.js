@@ -36,6 +36,10 @@ module.exports = {
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
       {
+        test: /\.png$/,
+        loader: 'url-loader?mimetype=image/png',
+      },
+      {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
       },
