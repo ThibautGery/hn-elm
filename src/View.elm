@@ -9,7 +9,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ nav
-        ,  Html.map Msgs.PostMsg (Posts.List.view model.posts )
+        ,  Html.map Msgs.PostsMsg (Posts.List.view model.posts )
         ]
 
 
