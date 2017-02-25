@@ -9,7 +9,7 @@ update msg model =
     case msg of
         PostsMsg postMsg ->
             let
-                ( posts, cmd ) =
-                    Posts.Update.update postMsg model.posts
+                ( posts, frontPageIds, cmd ) =
+                    Posts.Update.update postMsg model.posts model.frontPageIds
             in
-                ( { model | posts = posts}, Cmd.map PostsMsg cmd )
+                ( { model | posts = posts, frontPageIds = frontPageIds}, Cmd.map PostsMsg cmd )
