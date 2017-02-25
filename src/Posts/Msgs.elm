@@ -1,3 +1,5 @@
-module Posts.Msgs exposing(Msg)
+module Posts.Msgs exposing(..)
 
-type Msg = NoOps
+import Http
+
+type Msg = FrontPageIdReceived (Result Http.Error (List String))

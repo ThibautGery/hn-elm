@@ -5,11 +5,11 @@ import Msgs exposing (Msg)
 import Models exposing (Model, initModel)
 import Update exposing (update)
 import View exposing (view)
-
+import Posts.Commands exposing(fetchFrontPageId)
 
 init : ( Model, Cmd Msg )
 init =
-    ( initModel, Cmd.none )
+    ( initModel, Cmd.map Msgs.PostsMsg fetchFrontPageId )
 
 
 subscriptions : Model -> Sub Msg
