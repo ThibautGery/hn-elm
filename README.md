@@ -2,6 +2,8 @@
 
 This a clone of [Hacker-news](news.ycombinator.com) written in [Elm]
 
+[![CircleCI](https://circleci.com/gh/ThibautGery/hn-elm/tree/master.svg?style=svg)](https://circleci.com/gh/ThibautGery/hn-elm/tree/master)
+
 ## Requirements
  * [nodeJS](https://nodejs.org/en/)
  * [Elm](https://www.npmjs.com/package/elm) : `npm install -g elm`
