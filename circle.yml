@@ -1,0 +1,26 @@
+machine:
+  node:
+    version: "6.10"
+
+
+dependencies:
+  cache_directories:
+    - elm-stuff
+    - tests/elm-stuff
+
+  pre:
+    - npm install -g elm
+    - npm install -g elm-test
+
+  override:
+    - elm-package install -y
+
+
+compile:
+  override:
+    - elm-make
+
+
+test:
+  override:
+    - elm test
