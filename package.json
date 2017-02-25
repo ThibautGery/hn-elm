@@ -1,0 +1,36 @@
+{
+  "name": "elmer-news",
+  "version": "0.1.0",
+  "description": "HN's clone",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --port 3000",
+    "test": "elm test",
+    "postinstall": "elm-package install -y"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibautGery/hn-elm.git"
+  },
+  "keywords": [
+    "elm"
+  ],
+  "author": "Thibaut Gery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThibautGery/hn-elm/issues"
+  },
+  "homepage": "https://github.com/ThibautGery/hn-elm#elmer-news",
+  "dependencies": {
+    "css-loader": "0.26.1",
+    "elm-webpack-loader": "4.2.0",
+    "file-loader": "0.10.0",
+    "font-awesome": "4.7.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.14.0",
+    "webpack-dev-middleware": "1.10.0",
+    "webpack-dev-server": "1.16.3"
+  }
+}

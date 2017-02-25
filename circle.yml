@@ -12,8 +12,6 @@ dependencies:
     - npm install -g elm
     - npm install -g elm-test
 
-  override:
-    - elm-package install -y
 
 
 compile:

@@ -8,30 +8,31 @@ This a clone of [Hacker-news](news.ycombinator.com) written in [Elm]
  * [nodeJS](https://nodejs.org/en/)
  * [Elm](https://www.npmjs.com/package/elm) : `npm install -g elm`
  * [Elm-test](https://www.npmjs.com/package/elm-test) : `npm install -g elm-test`
+ * [Webpack](https://webpack.js.org/): `npm install -g webpack`
 
 ## Commands
 
 ### Install the dependencies
 
 ```bash
-elm package install
+npm install
 ```
 ### Run the app
 
 ```bash
-elm reactor
+npm run dev
 ```
 
 ### Build the application
 
 ```bash
-elm make
+npm build
 ```
 
 ### Run the tests
 
 ```bash
-elm tests
+npm test
 ```
 
 
