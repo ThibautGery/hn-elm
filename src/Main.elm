@@ -2,14 +2,14 @@ module Main exposing (..)
 
 import Html exposing (Html, div, text, program)
 import Msgs exposing (Msg)
-import Models exposing (Model)
+import Models exposing (Model, initModel)
 import Update exposing (update)
 import View exposing (view)
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( "Hello", Cmd.none )
+    ( initModel, Cmd.none )
 
 
 subscriptions : Model -> Sub Msg

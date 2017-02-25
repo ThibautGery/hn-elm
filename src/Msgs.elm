@@ -1,5 +1,6 @@
 module Msgs exposing (..)
 
+import Posts.Msgs
 
 type Msg
-    = NoOp
+    = PostMsg Posts.Msgs.Msg
