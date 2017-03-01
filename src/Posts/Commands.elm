@@ -20,13 +20,13 @@ fetchFrontPageIdUrl =
     "https://hacker-news.firebaseio.com/v0/topstories.json"
 
 
-fetchPost : String -> Cmd Msg
+fetchPost : Int -> Cmd Msg
 fetchPost id =
     Http.get (fetchOneItemUrl id) postDecoder
         |> Http.send PostReceived
 
 
 
-fetchOneItemUrl : String -> String
+fetchOneItemUrl : Int -> String
 fetchOneItemUrl id =
-    "https://hacker-news.firebaseio.com/v0/item/" ++ id ++ ".json"
+    "https://hacker-news.firebaseio.com/v0/item/" ++ (toString id) ++ ".json"
