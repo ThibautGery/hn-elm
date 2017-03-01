@@ -9,6 +9,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname + '/dist'),
+    publicPath: "/hn-elm/",
     filename: '[name].js',
   },
 

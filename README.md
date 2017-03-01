@@ -22,17 +22,24 @@ npm install
 ```bash
 npm run dev
 ```
+Go to [localhost:3000/hn-elm/](http://localhost:3000/hn-elm/)
 
 ### Build the application
 
 ```bash
-npm build
+npm run build
 ```
 
 ### Run the tests
 
 ```bash
 npm test
+```
+
+### Publish to Github Pages
+
+```bash
+node ./publish.js
 ```
 
 

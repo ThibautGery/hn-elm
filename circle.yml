@@ -12,13 +12,16 @@ dependencies:
     - npm install -g elm
     - npm install -g elm-test
 
-
-
 compile:
   override:
     - elm-make
 
-
 test:
   override:
     - elm test
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - node ./publish.js
