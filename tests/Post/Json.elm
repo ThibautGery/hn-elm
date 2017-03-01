@@ -41,5 +41,30 @@ tests =
                       , title = "My YC app: Dropbox - Throw away your USB drive"
                       , url = "http://www.getdropbox.com/u/2/screencast.html"
                     })
+            , test "Should not decode badly format json" <|
+                \() ->
+                  let
+                    actualPost = Json.Decode.decodeString
+                        postDecoder
+                        """
+                        {
+                          "
+                        }
+                        """
+                  in
+                    Expect.equal actualPost (Err "Given an invalid JSON: Unexpected token \n in JSON at position 54")
             ]
+            , test "Should return an error if no url" <|
+                \() ->
+                  let
+                    actualPost = Json.Decode.decodeString
+                        postDecoder
+                        """
+                        {
+                          "by" : "dhouston"
+                        }
+                        """
+                  in
+                    Expect.equal actualPost (Err "Expecting an object with a field named `url` but instead got: {\"by\":\"dhouston\"}")
+
         ]
