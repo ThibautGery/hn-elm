@@ -4,7 +4,7 @@ import Posts.Models exposing(Post)
 
 type alias Model =
   { posts: List Post
-  , frontPageIds: List String
+  , frontPageIds: List Int
   }
 
 initModel: Model
