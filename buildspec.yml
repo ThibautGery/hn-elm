@@ -1,0 +1,14 @@
+version: 0.1
+
+
+phases:
+  install:
+    commands:
+      - npm install -g elm
+      - npm install -g elm-test
+      - npm install
+
+  build:
+    commands:
+      - elm test
+      - npm run build
