@@ -48,19 +48,11 @@ author post = div [ class "two wide column" ]
       ]
 
 discution: Post -> Html Msg
-discution post = div  [ class "two wide column" ]
-                      [ div   [ class "ui mini labeled button" ]
-                              [ a [ class "ui mini basic button"
-                                  , href (linkToHn post)
-                                  ]
-                                  [ i [class "comment icon"] []
-                                  , text "Comment"]
-                              , a [ class "ui mini basic left pointing label"
-                                  , href (linkToHn post)
-                                  ]
-                                  [ text ( toString post.descendants) ]
-                              ]
-                      ]
+discution post = div [ class "two wide column" ]
+      [ a [ href (linkToHn post)]
+          [ text (String.concat [(toString post.descendants), " comments" ])
+          ]
+      ]
 
 linkToHn: Post -> String
 linkToHn post = String.concat [ "https://news.ycombinator.com/item?id="
