@@ -1,11 +1,7 @@
 'use strict';
 
+require('semantic-ui-css/semantic.min.css')
 
-var semanticUiComponenet = ["grid", "icon"]
-
-semanticUiComponenet.forEach(component => {
-  require('semantic-ui-css/components/' + component + '.min.css')
-})
 
 // Require index.html so it gets copied to dist
 require('./index.html');
