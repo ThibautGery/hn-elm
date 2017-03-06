@@ -28,4 +28,5 @@ deployment:
   publish:
     branch: master
     commands:
+      - npm run build
       - node ./publish.js
