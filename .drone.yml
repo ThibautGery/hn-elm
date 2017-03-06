@@ -4,5 +4,6 @@ pipeline:
     commands:
       - npm install -g elm
       - npm install -g elm-test
+      - npm install
       - elm-make
       - elm test
