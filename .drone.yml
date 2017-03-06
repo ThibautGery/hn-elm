@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: node
+    commands:
+      - npm install -g elm
+      - npm install -g elm-test
+      - elm-make
+      - elm test
